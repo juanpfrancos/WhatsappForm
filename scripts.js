@@ -4,6 +4,7 @@ window.intlTelInput(input, {
   // any initialisation options go here
 });
 
+let receptorNumber=prompt("Ingresa un número al cual quieres enviarle este mensaje a través de whatsapp Ej: 573122005891");
 
 document.querySelector('#submit').addEventListener('click',function(){
     
@@ -13,7 +14,7 @@ document.querySelector('#submit').addEventListener('click',function(){
     let date = document.querySelector('#date').value;
     let message = document.querySelector('#message').value;
 
-    let url = "https://api.whatsapp.com/send?phone=573217749066&text=*_Barberia Lider_*%0A*Reservas*%0A%0A*¿Cual es tu nombre?*%0A" + cliente + "%0A*Indica la fecha de tu reserva*%0A" + fecha + "%0A*Indica la hora de tu reserva*%0A" + hora + "%0A*Barbero de preferencia*%0A" + barbero + "%0A*¿Cual es el servicio que se desea realizar?*%0A" + servicio;
+    let url = "https://api.whatsapp.com/send?phone="+receptorNumber+"&text=*_Whatsapp Webform_*%0A* Info *%0A%0A*Name:*%0A" + name + "%0A*E-Mail*%0A" + email + "%0A*Phone*%0A" + phone + "%0A*Message:*%0A" + message;
     window.open(url);
 
 });

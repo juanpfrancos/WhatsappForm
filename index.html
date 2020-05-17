@@ -3,75 +3,83 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Whatsapp Form</title>
+    <meta name="theme-color" content="#3273dc">
+    <title>Whatsapp WebForm</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/css/intlTelInput.css" integrity="sha256-rTKxJIIHupH7lFo30458ner8uoSSRYciA0gttCkw1JE=" crossorigin="anonymous" />
+    <link id="favicon" rel="shortcut icon" href="https://web.whatsapp.com/img/favicon/1x/favicon.png" type="image/png">
 </head>
   <body class="has-background-link">
-  <section class="section">
-    <div class="container">
-      <h1 class="title">
-        Whatsapp Web Form
-      </h1>
-      <p class="subtitle">
-        Send web form information through <strong>Whatsapp</strong>!
-      </p>
-        <div class="container has-background-info">            
-            <div class="field container">
-                <label class="label">Name</label>
-                <div class="control has-icons-left has-icons-right">
-                <input class="input is-success" type="text" placeholder="Text input" value="bulma">
-                <span class="icon is-small is-left">
-                    <i class="fas fa-user"></i>
-                </span>
+    <div class="container has-text-centered" style="padding-top: 1em;">
+        <h1 class="title has-text-success">Whatsapp WebForm</h1>
+        <p style="font-size: 1.5em;" class="subtitle">Send webform information through <strong>Whatsapp </strong><i class="fab fa-whatsapp has-text-success"></i></p>
+    </div>
+  <section class="container section">
+    <div class="container columns">    
+        <div class="container has-background-info column is-one-third" style="border-radius: 1.5em; -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+        -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+        box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.75);">     
+            <div class="column section-padding-large">
+                <div class="field section-padding-large">
+                    <label class="label">Name</label>
+                    <div class="control has-icons-left has-icons-right">
+                    <input id="name" class="input is-success" type="text" placeholder="Your Name" value="bulma">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-user"></i>
+                    </span>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="field">
-                <label class="label">Email</label>
-                <div class="control has-icons-left has-icons-right">
-                <input class="input" type="email" placeholder="Email input" value="hello@">
-                <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                </span>
+                
+                <div class="field">
+                    <label class="label">Email</label>
+                    <div class="control has-icons-left has-icons-right">
+                    <input id="email" class="input" type="email" placeholder="Your Email" value="hello@">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-envelope"></i>
+                    </span>
+                    </div>
                 </div>
-            </div>
+    
+                <div class="field">
+                    <label class="label">Whatsapp Number</label>
+                    <div class="control">
+                    <input id="phone" class="input" type="tel" >
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Date</label>
+                    <div class="control has-icons-left has-icons-right">
+                    <input id="date" class="input" type="date">
+                    <span class="icon is-small is-left">
+                        <i class="fas fa-calendar"></i>
+                    </span>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <label class="label">Message</label>
+                    <div class="control">
+                    <textarea id="message" class="textarea" placeholder="Textarea"></textarea>
+                    </div>
+                </div>
 
-            <div class="field">
-                <label class="label">Whatsapp Number</label>
-                <div class="control has-icons-left has-icons-right">
-                <input class="input" type="tel" id="phone">
+                <div class="field is-grouped">
+                    <div class="control">
+                    <button id="submit" class="button is-link">Submit</button>
+                    </div>
+                    <div class="control">
+                    <button id="cancel" class="button is-link is-light">Cancel</button>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="field">
-                <label class="label">Date</label>
-                <div class="control has-icons-left has-icons-right">
-                <input class="input" type="date">
-                <span class="icon is-small is-left">
-                    <i class="fas fa-calendar"></i>
-                </span>
-                </div>
-            </div>
-            
-            <div class="field">
-                <label class="label">Message</label>
-                <div class="control">
-                <textarea class="textarea" placeholder="Textarea"></textarea>
-                </div>
-            </div>
-            <div class="field is-grouped">
-                <div class="control">
-                <button class="button is-link">Submit</button>
-                </div>
-                <div class="control">
-                <button class="button is-link is-light">Cancel</button>
-                </div>
-            </div>
+            </div>    
         </div>
     </div>
-  </section>
+    <div class="container has-text-centered" style="padding-top: 1em;">
+    <p class="subtitle">Developed by <a href="https://www.instagram.com/juanpfrancos/" target="_blank"><strong>Juanpfrancos</strong></a></p>
+    </div> 
+</section>
   <style>
         .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/img/flags.png");}
         @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
