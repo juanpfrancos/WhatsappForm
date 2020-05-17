@@ -6,10 +6,11 @@
     <title>Whatsapp Form</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  </head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/css/intlTelInput.css" integrity="sha256-rTKxJIIHupH7lFo30458ner8uoSSRYciA0gttCkw1JE=" crossorigin="anonymous" />
+</head>
   <body class="has-background-link">
   <section class="section">
-    <div class="container has-text-centered">
+    <div class="container">
       <h1 class="title">
         Whatsapp Web Form
       </h1>
@@ -18,37 +19,36 @@
       </p>
         <div class="container has-background-info">            
             <div class="field container">
-                <label class="label">Username</label>
+                <label class="label">Name</label>
                 <div class="control has-icons-left has-icons-right">
                 <input class="input is-success" type="text" placeholder="Text input" value="bulma">
                 <span class="icon is-small is-left">
                     <i class="fas fa-user"></i>
                 </span>
-                <span class="icon is-small is-right">
-                    <i class="fas fa-check"></i>
-                </span>
                 </div>
-                <p class="help is-success">This username is available</p>
             </div>
             
             <div class="field">
                 <label class="label">Email</label>
                 <div class="control has-icons-left has-icons-right">
-                <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+                <input class="input" type="email" placeholder="Email input" value="hello@">
                 <span class="icon is-small is-left">
                     <i class="fas fa-envelope"></i>
                 </span>
-                <span class="icon is-small is-right">
-                    <i class="fas fa-exclamation-triangle"></i>
-                </span>
                 </div>
-                <p class="help is-danger">This email is invalid</p>
+            </div>
+
+            <div class="field">
+                <label class="label">Whatsapp Number</label>
+                <div class="control has-icons-left has-icons-right">
+                <input class="input" type="tel" id="phone">
+                </div>
             </div>
             
             <div class="field">
-                <label class="label">Email</label>
+                <label class="label">Date</label>
                 <div class="control has-icons-left has-icons-right">
-                <input class="input is-danger" type="date">
+                <input class="input" type="date">
                 <span class="icon is-small is-left">
                     <i class="fas fa-calendar"></i>
                 </span>
@@ -72,5 +72,14 @@
         </div>
     </div>
   </section>
+  <style>
+        .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/img/flags.png");}
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        .iti__flag {background-image: url("https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/img/flags@2x.png");}
+        }
+  </style>
+  <!--International Tel Input Script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.0/js/intlTelInput.min.js" integrity="sha256-UdcCVwk4oBi9snhU+B1lephRJyhUgx6ft7OP8K+Eikg=" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
   </body>
 </html>
