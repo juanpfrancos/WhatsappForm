@@ -14,7 +14,7 @@ document.querySelector('#submit').addEventListener('click',function(){
     let date = document.querySelector('#date').value;
     let message = document.querySelector('#message').value;
 
-    let url = "https://api.whatsapp.com/send?phone="+receptorNumber+"&text=*_Whatsapp Webform_*%0A* Info *%0A%0A*Name:*%0A" + name + "%0A*E-Mail*%0A" + email + "%0A*Phone*%0A" + phone + "%0A*Message:*%0A" + message;
+    let url = "https://api.whatsapp.com/send?phone="+receptorNumber+"&text=*_Whatsapp Webform_*%0A%0A*Name:*%0A" + name + "%0A*E-Mail*%0A" + email + "%0A*Phone*%0A" + phone + "%0A*Message:*%0A" + message;
     window.open(url);
 
 });
